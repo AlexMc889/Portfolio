@@ -18,6 +18,8 @@ Python program that is integrated into VirusTotal's API and ipinfo.io's API to r
 | Pentration Testing                                 | HackTheBox|
 | Python Scripting                                   | <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IP Reputation Checker</a>|
 | Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeship|
+| Linux System Adminstration                         | Redhat RH124 Course|
+| CTFs & Network Adminstration                       | UTD Cyber Defense Course|
 
 
 ## Certifications
