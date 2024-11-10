@@ -7,4 +7,5 @@ I'm a Computer Science major/Cybersecurity minor at TAMU seeking a summer intern
 ## Projects
 ### IP Reputation Checker in Python 
 Python program that is integrated into VirusTotal's API and ipinfo.io's API to retrieve the given IP's location and reputation. It also checks the IP against lists of known VPN and Tor nodes.
-###<a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IPreputation.py</a>
+
+<a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IPreputation.py</a>
