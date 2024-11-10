@@ -10,6 +10,17 @@ Python program that is integrated into VirusTotal's API and ipinfo.io's API to r
 
 <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IPreputation.py</a>
 
+## Skills 
+
+| Skills                                         | Associated Experience         |
+|-----------------------------------------------|----------------------------|
+| Log Analysis, Traffic Monitoring, and IAM          | A&M Cybersecurity Apprenticeship|
+| Pentration Testing                                 | HackTheBox|
+| Python Scripting                                   | <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IP Reputation Checker</a>|
+| Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeshipo|
+| Scripting and Automation for Threat Mitigation | SOC Automation Lab|
+
+
 ## Certifications
 <div>
 <img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
