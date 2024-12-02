@@ -67,7 +67,6 @@ def is_bogon(ip):
         else:
             return False
     except ValueError:
-        # If the IP address is not valid, return False
         print(f"{ip} is not a valid IP address.")
         return False
 
