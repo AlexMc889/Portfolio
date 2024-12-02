@@ -10,7 +10,7 @@ Python program that is integrated into VirusTotal's API and ipinfo.io's API to r
 
 It retrieves all active connections to external IPs using bash and ss command, writes them to a file, then runs them through the python program. 
 
-<a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IPreputation.py</a>
+<a href="https://github.com/AlexMc889/Portfolio/blob/main/check_ips.py">check_ips.py</a>
 
 ## Skills 
 
