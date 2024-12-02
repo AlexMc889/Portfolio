@@ -76,7 +76,7 @@ def repcheck(ip):
     url = f"https://www.virustotal.com/api/v3/ip_addresses/{ip}"
     headers = {
         "accept": "application/json",
-        "x-apikey": "5e716cfcf41e2b837a1ffaa2077f051af5f94a0cf40dc469b31ed524840de6ea"
+        "x-apikey": ""
         # Enter your own virustotal API key
     }
 # request virus total scan using API key
