@@ -18,7 +18,7 @@ It retrieves all active connections to external IPs using bash and ss command, w
 |-----------------------------------------------|----------------------------|
 | Log Analysis, Traffic Monitoring, and IAM          | A&M Cybersecurity Apprenticeship|
 | Pentration Testing                                 | HackTheBox|
-| Python Scripting                                   | <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IP Reputation Checker</a>|
+| Python/Bash Scripting                              | <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IP Reputation Checker</a>|
 | Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeship|
 | Linux System Adminstration                         | Redhat RH124 Course|
 | CTFs & Network Adminstration                       | UTD Cyber Defense Course|
