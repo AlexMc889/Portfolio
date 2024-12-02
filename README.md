@@ -5,9 +5,10 @@
 I'm a Computer Science major/Cybersecurity minor at TAMU seeking a summer internship. My current focus is on cloud security, network security, ethical hacking, and I'm working as a Cybersecurity Apprentice for A&M. I'm seeking to apply my skills to add value and gain experience in a professional setting. 
 
 ## Projects
-### External IP Connections Reputation Checker in Python/Bash
+### External IP Connections Analyzer in Python/Bash
 Python program that is integrated into VirusTotal's API and ipinfo.io's API to retrieve the given IP's location and reputation. It also checks the IP against lists of known VPN and Tor nodes.
-It retrieves all active connections to external IPs using bash and ss command, then runs them through the python program. 
+
+It retrieves all active connections to external IPs using bash and ss command, writes them to a file, then runs them through the python program. 
 
 <a href="https://github.com/AlexMc889/Projects/blob/main/iprepchecker.py">IPreputation.py</a>
 
