@@ -4,7 +4,7 @@ import subprocess
 iplist = open("listactiveips.txt")
 iplist = iplist.read()
 iplist = iplist.split("\n")
-
+api = input("Enter your VirusTotal API key ")
 
 def checklocation(ip): 
     iprequest = requests.get(f'https://ipinfo.io/{i}')
@@ -77,7 +77,7 @@ def repcheck(ip):
     url = f"https://www.virustotal.com/api/v3/ip_addresses/{ip}"
     headers = {
         "accept": "application/json",
-        "x-apikey": "5e716cfcf41e2b837a1ffaa2077f051af5f94a0cf40dc469b31ed524840de6ea"
+        "x-apikey": "f{api}"
         # Enter your own virustotal API key
     }
 # request virus total scan using API key
