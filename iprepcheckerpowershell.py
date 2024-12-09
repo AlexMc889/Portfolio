@@ -83,7 +83,10 @@ def repcheck(ip):
 # request virus total scan using API key
     response = requests.get(url,headers=headers)
     rep = response.text
-    indexofmal = rep.index('stats": {"malicious":')
+    try:
+        indexofmal = rep.index('stats": {"malicious":')
+    except: 
+        return "Your virustotal API key is invalid"
     repscore = rep[indexofmal+22]
 # parse out malicious detection count
     return repscore
