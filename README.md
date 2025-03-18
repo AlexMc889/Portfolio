@@ -32,6 +32,7 @@ It retrieves all active connections to external IPs using bash and ss command, w
 <img src="https://img.shields.io/badge/-A%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
   <img src="https://img.shields.io/badge/-ExtraHop Security Network Essentials-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
 <img src="https://img.shields.io/badge/-AWS Certified Cloud Practitioner-4B275F?&style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Network%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
 </div>
 
 
