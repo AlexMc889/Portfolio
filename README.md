@@ -19,6 +19,7 @@ It retrieves all active connections to external IPs using bash and ss command, w
 | Skills                                         | Associated Experience         |
 |-----------------------------------------------|----------------------------|
 | Log Analysis, Traffic Monitoring, and IAM          | A&M Cybersecurity Apprenticeship|
+| AWS Cloud                                          | AWS Solutions Architect Certification|
 | Pentration Testing                                 | HackTheBox|
 | Python/Bash/Powershell Scripting                   | <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">IP Reputation Checker</a>|
 | Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeship|
