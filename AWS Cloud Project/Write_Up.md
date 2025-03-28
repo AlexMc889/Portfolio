@@ -60,3 +60,6 @@ First, we must set up our subnets and then route tables for each subnet.
 - ![Splunk Directory Brute Force](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Splunk%20bruteforce.png)
 - We can see all SSH attempts into our Bastion Host to.
 - ![SSH into Bastion Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/SSH%20into%20bastion.png)
+### Future Enchancements 
+- Deploying a WAF for our Apache Website.
+- Automating deployment with Terraform and IaC
