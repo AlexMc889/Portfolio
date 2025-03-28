@@ -31,7 +31,7 @@ First, we must set up our subnets and then route tables for each subnet.
 - ![Route Table 1](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
 - ![Route Table 2](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
 ### ALB, ASG, and Launch Template Setup 
-- To setup the ALB we must configure what AZs and subnets it will run on and give it a target group (Apache EC2 instances) and a liseneter to receive external connections.
+- To setup the ALB we must configure what AZs and subnets it will run on and give it a target group (Apache EC2 instances) and a listener to receive external connections.
 - The Launch Template will be configured to launch a pre-configured AMI Ubuntu machine. Our AMI will be already connected to our splunk server so that all new EC2 instances are connected as well.
 - In the ASG we will set max/min # of EC2 instances to scale up and what paremeter to scale on (we will use CPU usage).
 - ![AZ/Subnet ASG](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ALB%20setup.png)
