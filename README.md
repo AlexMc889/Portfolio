@@ -14,12 +14,20 @@ It retrieves all active connections to external IPs using bash and ss command, w
 
 <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">check_ips.py</a>
 
+###AWS Cloud Project 
+Designed a secure, scalable AWS infrastructure with VPC segmentation using public and private subnets.
+Implemented an Application Load Balancer (ALB) and Auto Scaling Group for high availability.
+Configured a NAT Gateway for secure outbound traffic and a bastion host for restricted access.
+Deployed a Splunk server to monitor logs from EC2 instances and the bastion host.
+Conducted simulated attacks to test security monitoring and threat detection.
+
+<a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>
 ## Skills 
 
 | Skills                                         | Associated Experience         |
 |-----------------------------------------------|----------------------------|
 | Log Analysis, Traffic Monitoring, and IAM          | A&M Cybersecurity Apprenticeship|
-| AWS Cloud                                          | AWS Solutions Architect Certification|
+| AWS Cloud                                          | AWS Solutions Architect Certification & <a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>|
 | Pentration Testing                                 | HackTheBox|
 | Python/Bash/Powershell Scripting                   | <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">IP Reputation Checker</a>|
 | Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeship|
