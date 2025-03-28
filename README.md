@@ -14,7 +14,7 @@ It retrieves all active connections to external IPs using bash and ss command, w
 
 <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">check_ips.py</a>
 
-###AWS Cloud Project 
+### AWS Cloud Project 
 Designed a secure, scalable AWS infrastructure with VPC segmentation using public and private subnets.
 Implemented an Application Load Balancer (ALB) and Auto Scaling Group for high availability.
 Configured a NAT Gateway for secure outbound traffic and a bastion host for restricted access.
