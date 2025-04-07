@@ -60,6 +60,18 @@ First, we must set up our subnets and then route tables for each subnet.
 - ![Splunk Directory Brute Force](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Splunk%20bruteforce.png)
 - We can see all SSH attempts into our Bastion Host to.
 - ![SSH into Bastion Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/SSH%20into%20bastion.png)
+### Setting Up DNS Server
+- We will also launch a internal DNS server so it is easier to resolve our machines.
+- We will set this up on a Ubuntu server running BIND, with the following security group.
+- ![Security Groups](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-security-group.png)
+- We will setup the DNS server BIND config file
+- ![DNS Server Config](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-server-config.png)
+- We will define the zone
+- ![Zone Files](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/defining-DNS-zone.png)
+- Then we can defined the records for our web server and our bastion host.
+- ![DNS Records](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-records.png)
+- Now we can use your internal DNS server on our other devices.
+- ![NSLookup Query](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/NSlookup.png)
 ### Future Enhancements 
 - Deploying a WAF for our Apache Website.
 - Automating deployment with Terraform and IaC
