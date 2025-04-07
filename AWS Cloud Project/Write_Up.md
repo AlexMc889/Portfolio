@@ -3,7 +3,7 @@
 After obtaining my AWS Solutions Architect and Cloud Practitioner Certifications, I did this project to apply some of the concepts I learned in a hands-on way.  
 
 ## Network Diagram  
-![VPC Layout](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/VPC%20Layout.png)
+![VPC Layout](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/VPC_layout.png)
 
 ## Overview  
 The goal of the project was to set up a secure, scalable, and available infrastructure to host a website and a Splunk server.  
