@@ -69,7 +69,7 @@ First, we must set up our subnets and then route tables for each subnet.
 - We will define the zone
 ![Zone Files](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/defining-DNS-zone.png)
 - Then we can defined the records for our web server and our bastion host.
-- ![DNS Records](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-records.png)
+![DNS Records](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-records.png)
 - Now we can use the internal DNS server on our other devices.
  ![NSLookup Query](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/NSlookup.png)
 ### Using Ansible for Automation 
