@@ -65,7 +65,7 @@ First, we must set up our subnets and then route tables for each subnet.
 - We will set this up on a Ubuntu server running BIND, with the following security group.
 - ![Security Groups](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-security-group.png)
 - We will setup the DNS server BIND config file
-![DNS Server Config](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-server-config.png)
+- ![DNS Server Config](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-server-config.png)
 - We will define the zone
 - ![Zone Files](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/defining-DNS-zone.png)
 - Then we can defined the records for our web server and our bastion host.
