@@ -52,7 +52,7 @@ First, we must set up our subnets and then route tables for each subnet.
 ### Configuring SSH Tunnel to Splunk Server 
 - To access our Splunk server from outside the VPC, we must SSH into the bastion host and then forward the Splunk webpage to our own machine.
 - To do this we will use PuTTY.
-![PuTTY Setup](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/PuTTY%20setup.png)
+- ![PuTTY Setup](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/PuTTY%20setup.png)
 - Now from outside the VPC we can access our Splunk server.
 ![Splunk Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunk%20logs.png)
 ### Monitoring Network for Attacks with Splunk
@@ -76,7 +76,7 @@ First, we must set up our subnets and then route tables for each subnet.
 - We can use Ansible to automate and easily run a set of tasks for all of our machines.
 - We will setup ansible on our splunk server and have it run a script to automatically update & upgrade our machines, and retrieve syslog from all the machines.
 - First we installed ansible and setup our hosts and ansible.cfg file
-![Ansible Script](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ansible%20script.png)
+- ![Ansible Script](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ansible%20script.png)
 - The results of running the script:
 ![Ansible Result](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/runningansible%20script.png)
 - As we can see the DNS server needed to be updated, and all syslog files were retrieved. 
