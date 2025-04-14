@@ -28,50 +28,58 @@ First, we must set up our subnets and then route tables for each subnet.
 ### Route Tables 
 - We will need to configure route tables for each of these subnets.
 - Public subnets will point towards a Internet Gateway and private subnets will point towards a NAT gateway
-- ![Route Table 1](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
-- ![Route Table 2](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
+![Route Table 1](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
+![Route Table 2](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Public%20Route%20Table.png)
 ### ALB, ASG, and Launch Template Setup 
 - To setup the ALB we must configure what AZs and subnets it will run on and give it a target group (Apache EC2 instances) and a listener to receive external connections.
 - The Launch Template will be configured to launch a pre-configured AMI Ubuntu machine. Our AMI will be already connected to our splunk server so that all new EC2 instances are connected as well.
 - In the ASG we will set max/min # of EC2 instances to scale up and what paremeter to scale on (we will use CPU usage).
-- ![AZ/Subnet ASG](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ALB%20setup.png)
-- ![Listener](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/listener%20setup.png)
+![AZ/Subnet ASG](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ALB%20setup.png)
+![Listener](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/listener%20setup.png)
 ### Splunk Server Setup 
 - After launching the EC2 instance in a private subnet, to connect to it we will use AWS Session Manager for a secure connection. To do this we will attach a IAM role to enable access.
-- ![IAM Role](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/IAM%20role.png)
+![IAM Role](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/IAM%20role.png)
 - Next we will install Splunk enterprise on it and allow data to be recieved on port 9997.
 - We will also configure our security group, only allowing SSH from the bastion host, and allowing logs to be received from the bastion host and our Apache EC2 instances.
 - We must also allow our bastion host to access the splunk webpage on port 8000.
-- ![Splunk Security Group](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunksecuritygroup.png)
+![Splunk Security Group](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunksecuritygroup.png)
 ### Bastion Host Setup
 - Our bastion host will allow us access to our splunk server outside of AWS. Although a Direct VPN into our VPC would be better, we will be using a bastion host.
 - Since our bastion host is accessible to the internet, we will configure the security group to only allow our IP to SSH into it.
-- ![Bastion Security Group](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Bastion%20Security%20Group.png)
+![Bastion Security Group](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Bastion%20Security%20Group.png)
 - We will also install a splunk forwarder on this machine, so we can monitor any activity on the EC2 instance.
-- ![Splunk forwarder](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunk%20forwarder.png)
+![Splunk forwarder](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunk%20forwarder.png)
 ### Configuring SSH Tunnel to Splunk Server 
 - To access our Splunk server from outside the VPC, we must SSH into the bastion host and then forward the Splunk webpage to our own machine.
 - To do this we will use PuTTY.
-- ![PuTTY Setup](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/PuTTY%20setup.png)
+![PuTTY Setup](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/PuTTY%20setup.png)
 - Now from outside the VPC we can access our Splunk server.
-- ![Splunk Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunk%20logs.png)
+![Splunk Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/splunk%20logs.png)
 ### Monitoring Network for Attacks with Splunk
 - Here we can see me attempting a directory brute force against the website.
-- ![Splunk Directory Brute Force](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Splunk%20bruteforce.png)
+![Splunk Directory Brute Force](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/Splunk%20bruteforce.png)
 - We can see all SSH attempts into our Bastion Host to.
-- ![SSH into Bastion Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/SSH%20into%20bastion.png)
+![SSH into Bastion Logs](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/SSH%20into%20bastion.png)
 ### Setting Up DNS Server
 - We will also launch a internal DNS server so it is easier to resolve our machines.
 - We will set this up on a Ubuntu server running BIND, with the following security group.
 - ![Security Groups](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-security-group.png)
 - We will setup the DNS server BIND config file
-- ![DNS Server Config](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-server-config.png)
+![DNS Server Config](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-server-config.png)
 - We will define the zone
-- ![Zone Files](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/defining-DNS-zone.png)
+![Zone Files](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/defining-DNS-zone.png)
 - Then we can defined the records for our web server and our bastion host.
 - ![DNS Records](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/DNS-records.png)
 - Now we can use the internal DNS server on our other devices.
-- ![NSLookup Query](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/NSlookup.png)
+ ![NSLookup Query](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/NSlookup.png)
+### Using Ansible for Automation 
+- We can use Ansible to automate and easily run a set of tasks for all of our machines.
+- We will setup ansible on our splunk server and have it run a script to automatically update & upgrade our machines, and retrieve syslog from all the machines.
+- First we installed ansible and setup our hosts and ansible.cfg file
+![Ansible Script](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ansible%20script.png)
+- The results of running the script:
+![Ansible Result](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/runningansible%20script.png)
+- As we can see the DNS server needed to be updated, and all syslog files were retrieved. 
 ### Future Enhancements 
 - Deploying a WAF for our Apache Website.
 - Automating deployment with Terraform and IaC
