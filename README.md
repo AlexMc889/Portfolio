@@ -25,6 +25,8 @@ Deployed a Splunk server to monitor logs from EC2 instances and the bastion host
 
 Deployed an interntal DNS server using BIND.
 
+Used Ansible to automate tasks across the network.
+
 Conducted simulated attacks to test security monitoring and threat detection.
 
 <a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>
