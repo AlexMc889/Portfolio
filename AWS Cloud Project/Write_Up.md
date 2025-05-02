@@ -25,6 +25,8 @@ First, we must set up our subnets and then route tables for each subnet.
 - **10.0.3.0/24 (Public)** - This subnet will be for our NAT gateway, enabling our Splunk server and Apache EC2 instance to access the internet while still in a private subnet for patches/updates. Our bastion host will also be here for external acccess to our Splunk server.
 - **10.0.4.0/24 (Private)** - This subnet will host our Splunk server in a private subnet, so it is not directly accessible on the internet.
 - **10.0.2.0/24 (Private)** - This subnet will host our Apache Website EC2 instances in a ASG group behind our ALB. They will be in a private subnet, so they are only accessible through the ALB.
+- **10.0.6.0/24 (Private)** - This subnet is for our internal BIND DNS server.
+- **10.0.7.0/24 (Private)** - This subnet is for our small AD environment.
 ### Route Tables 
 - We will need to configure route tables for each of these subnets.
 - Public subnets will point towards a Internet Gateway and private subnets will point towards a NAT gateway
