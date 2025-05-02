@@ -19,7 +19,7 @@ Lastly, our Splunk server will monitor all hosts.
 ## VPC Setup  
 First, we must set up our subnets and then route tables for each subnet.  
 
-![Subnets](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/subnets.png)
+![Subnets](\https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/vpc.png)
 ### Subnets  
 - **10.0.1.0/24 & 10.0.5.0/24 (Public)** - These will be used by our Application Load Balancer as access to our website. AWS requires 2 subnets in 2 different AZs for an ALB, increasing availability.
 - **10.0.3.0/24 (Public)** - This subnet will be for our NAT gateway, enabling our Splunk server and Apache EC2 instance to access the internet while still in a private subnet for patches/updates. Our bastion host will also be here for external acccess to our Splunk server.
