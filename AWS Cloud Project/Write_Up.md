@@ -6,7 +6,7 @@ After obtaining my AWS Solutions Architect and Cloud Practitioner Certifications
 ![VPC Layout](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/layout.drawio.png)
 
 ## Overview  
-The goal of the project was to set up a secure, scalable, and available infrastructure to host a website and a Splunk server.  
+The goal of the project was to set up a secure, scalable, and available infrastructure to host a website, splunk server, internal DNS server, and a small AD environment.  
 
 Security will be implemented through segmenting each part of the network into its own subnet. Certain subnets will be private, and external access will only be provisioned through a bastion host. 
 
@@ -14,7 +14,7 @@ Security groups will also be configured for all EC2 instances.
 
 Scalability and availability will be implemented by using an Application Load Balancer and an Auto Scaling Group.  
 
-Lastly, our Splunk server will monitor our bastion host and any EC2 instance started by the ASG.  
+Lastly, our Splunk server will monitor all hosts. 
 
 ## VPC Setup  
 First, we must set up our subnets and then route tables for each subnet.  
