@@ -88,20 +88,25 @@ First, we must set up our subnets and then route tables for each subnet.
 - Now in another private subnet we will deploy a domain controller and a windows server
 - First we must setup a SSH tunnel through the bastion host to access the server, because it is in a private subnet
 - ![SSH Tunnel](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/sshtunnel.png)
+ 
 - Now we can RDP into the Domain Controller
 - First we must setup the IP address and the DNS server of the domain controller.
 - The DNS server will be itself (127.0.0.1)
 - ![DNS](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/configuring%20dns%20and%20IP.png)
+ 
 - Now lets install AD components
 ![AD install](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/installingad.png)
+
 - Lets make the name of our domain corp.local
 ![Domain Name](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/creatingdomain.png)
+
 - Lets setup the domain controller's security group
 ![domain controller](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/securitygroup.png)
 ### Setup Client Windows Server
 - The client windows server will have its DNS set to the domain controller
 - ![DNS domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/client%20computer.png)
 - ![test DNS](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ensure%20dns%20is%20working.png)
+ 
 - Join the windows server to the domain
 - ![join domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/join%20domain.png)
 ### Setup Users and OUs
@@ -112,16 +117,20 @@ First, we must set up our subnets and then route tables for each subnet.
 - Lets force the update and see if it applied
 - ![Update](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/forcegpuupdate.png)
 - ![Seegpo](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/gpuresult.png)
+ 
 - Now lets create a new Administrator account instead of using the default one, using powershell.
 ![create user](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/createnewadmin.png)
 ![add group](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/movealexandertoadmin.png)
+
 - Lets setup the OU structure to accomdate for admins and users, all under one OU.
 - ![OU setup](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/createnewOUusers.png)
+ 
 - Now we will create a GPO and apply it to the Admin OU to enable account lockout after 5 attempts.
 - ![account lockout](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/accountlockoutadmin.png)
 ### Enable Remote Access and Connect to Splunk
 - Lets enable remote access through WinRM
 ![remote access](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/remoteaccess%20for%20computers.png)
+
 - Lastly we will install a splunk forwarder to forward logs to our splunk server
 ![splunk](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/install%20splunk.png)
 ### Future Enhancements 
