@@ -100,7 +100,7 @@ First, we must set up our subnets and then route tables for each subnet.
 ![domain controller](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/securitygroup.png)
 ### Setup Client Windows Server
 - The client windows server will have its DNS set to the domain controller
--![DNS domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/client%20computer.png)
+- ![DNS domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/client%20computer.png)
 ![test DNS](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ensure%20dns%20is%20working.png)
 - Join the windows server to the domain
 -![join domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/join%20domain.png)
