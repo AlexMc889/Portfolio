@@ -14,6 +14,8 @@ Security groups will also be configured for all EC2 instances.
 
 Scalability and availability will be implemented by using an Application Load Balancer and an Auto Scaling Group.  
 
+Automation will be implemented via Ansible.
+
 Lastly, our Splunk server will monitor all hosts. 
 
 ## VPC Setup  
