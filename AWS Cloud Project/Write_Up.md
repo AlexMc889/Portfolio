@@ -101,9 +101,9 @@ First, we must set up our subnets and then route tables for each subnet.
 ### Setup Client Windows Server
 - The client windows server will have its DNS set to the domain controller
 - ![DNS domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/client%20computer.png)
-![test DNS](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ensure%20dns%20is%20working.png)
+- ![test DNS](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/ensure%20dns%20is%20working.png)
 - Join the windows server to the domain
--![join domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/join%20domain.png)
+- ![join domain](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/join%20domain.png)
 ### Setup Users and OUs
 - Lets create a OU for users instead of using the default container. Also we will create a user named john.
 ![john](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/moveusertoOU.png)
