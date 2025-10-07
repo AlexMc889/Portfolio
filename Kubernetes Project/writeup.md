@@ -5,9 +5,9 @@ I decided to do this project to learn the funadmentals of kubernetes by building
 ## Overview 
 
 The goal of this project is to: 
-- Set up a kuberentes cluster using kubeadm on EC2 with a control plane and one worker node
+- Set up a kubernetes cluster using kubeadm on EC2 with a control plane and one worker node
 - Deploy a nginx web server running ModSecurity as a WAF
-- Use Falco to secure containersdoes it
+- Use Falco to secure and log container activity
 
 ## Setup Cluster
 - Lets install kubeadm
