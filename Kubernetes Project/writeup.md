@@ -2,9 +2,6 @@
 
 I decided to do this project to learn the funadmentals of kubernetes by building  my own kubernetes cluster. 
 
-## Layout 
-
-
 ## Overview 
 
 The goal of this project is to: 
