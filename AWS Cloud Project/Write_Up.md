@@ -133,6 +133,15 @@ First, we must set up our subnets and then route tables for each subnet.
 
 - Lastly we will install a splunk forwarder to forward logs to our splunk server
 ![splunk](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/install%20splunk.png)
+
+### Automating Deployment with Terraform 
+- With Terraform we can do automate a lot of the initial setup.
+- First I created config files specifying the resources we need (VPCs, subnets, security groups, key pairs, etc)
+- [Config files found here](https://github.com/AlexMc889/Portfolio/tree/main/AWS%20Cloud%20Project/Terraform)
+- Then by using terraform apply and terraform destroy we can quickly bring up and take down our infrastructure
+- ![Terraform Deploy](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy.png)
+- ![Terraform deploy complete](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy%20complete.png)
+- ![Terraform destroy](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20destroy.png)
+- ![Terraform destroy complete](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy%20complete.png)
 ### Future Enhancements 
 - Deploying a WAF for our Apache Website.
-- Automating deployment with Terraform and IaC
