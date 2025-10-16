@@ -141,6 +141,9 @@ First, we must set up our subnets and then route tables for each subnet.
 - Then by using terraform apply and terraform destroy we can quickly bring up and take down our infrastructure
 - ![Terraform Deploy](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy.png)
 - ![Terraform deploy complete](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy%20complete.png)
+- Now we can see in the AWS Management Console that our resources have been provisioned
+- ![Deployed](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/all%20devices%20deployed.png)
+- Now lets take all of it down using terraform destroy
 - ![Terraform destroy](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20destroy.png)
 - ![Terraform destroy complete](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Images/terraform%20deploy%20complete.png)
 ### Future Enhancements 
