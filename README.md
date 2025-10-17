@@ -29,18 +29,21 @@ Used Ansible to automate tasks across the network.
 
 Conducted simulated attacks to test security monitoring and threat detection.
 
+Automated deployment with Terraform.
+
 <a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>
 ## Skills 
 
 | Skills                                         | Associated Experience         |
 |-----------------------------------------------|----------------------------|
-| Log Analysis, Traffic Monitoring, and IAM          | A&M Cybersecurity Apprenticeship|
+| Log Analysis, Traffic Monitoring, and IAM          | A&M Student Security Analyst, HBK Security Operations Internship|
 | AWS Cloud                                          | AWS Solutions Architect Certification & <a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>|
 | Pentration Testing                                 | HackTheBox|
-| Python/Bash/Powershell Scripting                   | <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">IP Reputation Checker</a>|
+| Python/Bash/Powershell Scripting                   | <a href="https://github.com/AlexMc889/Portfolio/blob/main/Traffic_Analyzer/check_ips.py">IP Reputation Checker</a>, HBK Security Operations Internship|
 | Elastic, ExtraHop, Cisco Oort                      | A&M Cybersecurity Apprenticeship|
 | Linux System Adminstration                         | Redhat RH124 Course|
 | CTFs & Network Adminstration                       | UTD Cyber Defense Course|
+| Crowdstrike, Splunk                                | HBK Security Operations Internship|
 
 
 ## Certifications
