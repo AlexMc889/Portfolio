@@ -33,6 +33,7 @@ Automated deployment with Terraform.
 
 ### Kubernetes Cluster Deployment
 Deployed and secured a self-managed K8s cluster on AWS EC2, hosting a NGINX web server.
+
 Enhanced security with ModSecurity WAF and Falco for threat detection and container security.
 
 
