@@ -36,7 +36,7 @@ Deployed and secured a self-managed K8s cluster on AWS EC2, hosting a NGINX web 
 Enhanced security with ModSecurity WAF and Falco for threat detection and container security.
 
 
-<a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>
+<a href="https://github.com/AlexMc889/Portfolio/blob/main/Kubernetes%20Project/writeup.md">Kubernetes Cluster Deployment</a>
 ## Skills 
 
 | Skills                                         | Associated Experience         |
