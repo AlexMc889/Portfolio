@@ -29,7 +29,7 @@
 - We can see that mimikatz.exe access lsass.exe, additionally the SourceUser being different from the TargetUser is also a indicator
 - We can also find the network logs of the kerberos requests for the TGT
 - ![wireshark](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/Kerbos%20request.png)
-- ![username of tgt request](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/Kerbos%20request.png)
+- ![username of tgt request](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/request%20admin%20tgt.png)
 - We can also find the username of the TGT request in the wireshark logs
 
 ## Mitigations
