@@ -31,7 +31,7 @@ A NAT gateway will allow the private subnet to access the internet for updates.
 - Now we are ready to execute and perform attacks. See the links below for full write ups on each technique.
 
 ## Attack and Detection Write Ups 
-- [Kerberoasting](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/kerberoast/kerberoast%20writeup)
+- [Kerberoasting](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/kerberoast/kerberoast%20writeup.md)
 - [Pass The Hash](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/pass%20the%20hash%20writeup.md)
 - [Golden Ticket](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/golden%20ticket/golden%20ticket%20writeup.md)
 - [Bloodhound Mapping](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Bloodhound/bloodhound%20writeup.md)
