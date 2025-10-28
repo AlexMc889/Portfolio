@@ -39,6 +39,8 @@ Simulated attacks on an AD environment like Kerberoasting, Pass-The-Hash, Golden
 
 Detected attacks using Sysmon, Splunk, and Wireshark.
 
+<a href="https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20&%20Defense/writeup.md">Active Directory Attack & Defense</a>
+
 ### Kubernetes Cluster Deployment
 Deployed and secured a self-managed K8s cluster on AWS EC2, hosting a NGINX web server.
 
