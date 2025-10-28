@@ -28,7 +28,7 @@ A NAT gateway will allow the private subnet to access the internet for updates.
 - ![powershell forward logs](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Setup/add%20powershell%20logs.png)
 - Now lets check to make sure these logs are being ingested on our splunk server.
 - ![splunk logs digested](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Setup/logs%20ingested.png)
-- Now we are ready to execute and perform attacks.
+- Now we are ready to execute and perform attacks. See the links below for full write ups on each technique.
 
 ## Attack and Detection Write Ups 
 - [Kerberoasting](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/kerberoast/kerberoast%20writeup)
