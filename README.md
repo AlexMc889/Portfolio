@@ -31,6 +31,14 @@ Conducted simulated attacks to test security monitoring and threat detection.
 
 Automated deployment with Terraform.
 
+<a href="https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md">AWS Cloud Project</a>
+
+### Active Directory Attack & Defense
+
+Simulated attacks on an AD environment like Kerberoasting, Pass-The-Hash, Golden Ticket, and Bloodhound Enumeration. 
+
+Detected attacks using Sysmon, Splunk, and Wireshark.
+
 ### Kubernetes Cluster Deployment
 Deployed and secured a self-managed K8s cluster on AWS EC2, hosting a NGINX web server.
 
