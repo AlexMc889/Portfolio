@@ -23,6 +23,8 @@
 - ![running hashcat](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/running%20hashcat.png)
 - Hashcat is successful and cracked the password
 - ![hashcat crakced](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/hashcat%20cracked.png)
+- Now using the cracked password we can generate a TGT
+- ![genreate tgt](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/rubeus%20get%20tgt%20dummy%20serivce.png)
 
 ## Detecting the Attack
 
