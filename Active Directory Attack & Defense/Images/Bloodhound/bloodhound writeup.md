@@ -18,7 +18,7 @@
 - To collect data to import into Bloodhound, we will use a tool called Sharphound
 - ![Sharphound](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Bloodhound/sharphound%20running.png)
 - This will generate JSON files containing all AD data
-- [AD file](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Bloodhound/json%20files.png)
+- ![AD file](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Bloodhound/json%20files.png)
 - After importing these JSON files into Bloodhound lets visualize some relationships
 - This is a relationship from the OU "AllComputers" to the Domain Controller
 - ![computer to dc](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Bloodhound/map%20allcomputers%20to%20admin.png)
