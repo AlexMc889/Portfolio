@@ -33,5 +33,5 @@
 - We can also find the username of the TGT request in the wireshark logs
 
 ## Mitigations
-- Restriciting and alerting on local administrator access can help detect this attack. Implementing LAPS would help secure local admin accounts.
+- Restricting and alerting on local administrator access can help detect this attack. Implementing LAPS would help secure local admin accounts.
 - Most EDRs will detect and alert on suspicious LSASS access.
