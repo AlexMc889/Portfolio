@@ -17,7 +17,7 @@ A bastion host is deployed in a public subnet for access to our domain controlle
 
 A NAT gateway will allow the private subnet to access the internet for updates.
 
-## Splunk 
+## Environment Setup 
 - First I set up an Active Directory domain with Splunk forwarders and a Splunk server.
  - For a write up on this process see my [AWS Cloud Project](https://github.com/AlexMc889/Portfolio/blob/main/AWS%20Cloud%20Project/Write_Up.md) 
 - Lets download and enable sysmon using swiftonsecurity's configuration
