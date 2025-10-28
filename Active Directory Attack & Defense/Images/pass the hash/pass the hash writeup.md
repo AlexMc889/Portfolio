@@ -11,7 +11,7 @@
 - It can detect credential theft attempts like Mimikatz accessing LSASS
 - ![enable 10](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/sysmonconfig%20for%20event%20ID%2010.png)
 - Now lets update sysmon
-- ![update sysmon](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/sysmonconfig%20for%20event%20ID%2010.png)
+- ![update sysmon](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/pass%20the%20hash/sysmon%20-c%20update.png)
 
 ## Executing the Attack 
 - This attack requires local admin access on the computer to access LSASS
