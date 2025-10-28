@@ -1,7 +1,7 @@
 # Kerberoasting Attack & Detection 
 
 ## What is Kerberoasting
-- Kerberoasting is when a domain user requests a Kerberos ticket from a Service Princpial Name (SPN), targeting service accounts
+- Kerberoasting is when a domain user requests a Kerberos ticket from a Service Principal Name (SPN), targeting service accounts
 - The attacker stores the encrypted ticket offline and attempts to crack it with tools like Hashcat or John The Ripper
 - If bruteforce is successful the attacker can impersonate the account and inherit access to anything granted to the compromised account
 
