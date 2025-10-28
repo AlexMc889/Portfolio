@@ -16,7 +16,7 @@
 - ![getaduser query](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/kerberoast/suspicious%20spn%20query.png)
 - After confirming there is a valid target lets use Rubeus to request the TGS ticket
 - ![rubeus](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/kerberoast/rubeus%20kerberoast.png)
-- Now we have the TGS ticket's hash which we can export and try and crack offline
+- Now we have the TGS hash which we can export and try and crack offline
 
 ### Cracking TGS Ticket
 - We will use hashcat running wordlists found from SecLists
