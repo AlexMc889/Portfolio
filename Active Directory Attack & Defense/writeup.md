@@ -2,7 +2,9 @@
 
 The objective of this project is to learn how to execute and detect common attacks in a typical AD setup.
 
-We will be using tools such as Mimikatz, Bloodhound, Sharphound, and Rubeus for our attacks. We will detecting attacks using Sysmon and Event Logs all forwarded to Splunk. 
+We will be using tools such as Mimikatz, Bloodhound, Sharphound, and Rubeus for our attacks. 
+
+We will detecting attacks using Sysmon and Event Logs all forwarded to Splunk. 
 
 ## Network Diagram 
 ![diagram](https://github.com/AlexMc889/Portfolio/blob/main/Active%20Directory%20Attack%20%26%20Defense/Images/Setup/AD%20setup.png)
