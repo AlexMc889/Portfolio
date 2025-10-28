@@ -3,7 +3,7 @@
 ## What is a Golden Ticket Attack
 - A golden ticket attack targets the KRBTGT account's hash
 - The KRBTGT is used to sign all TGTs, so compromising it grants the ability to forge any ticket
-- Typically privileged access to the Domain Controller is required, although a DCSync attack can also acquire the KRBGT account hash
+- Typically privileged access to the Domain Controller is required, although a DCSync attack can also acquire the KRBTGT account hash
 - Leads to complete domain compromise including dumping NTDS.DIT file (contains all domain users password hashes), typically though a shadow copy
 
 ## Executing the Attack 
@@ -37,4 +37,6 @@
 
 ## Mitigations
 - Securing access to the Domain Controller is essential to preventing a KRBTGT attack. (EDR, Implementing JumpBox, Least Privilege, Physical Access etc)
+- Preventing a DCSync attack by limiting replication privileges given to accounts.
+- If attack does occur you have to change the KRBTGT password twice to invalidate the attacker's golden ticket.
   
